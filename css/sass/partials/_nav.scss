@@ -1,0 +1,31 @@
+//
+//_nav.scss - Navigation declarations.
+//
+
+nav {
+
+}
+.bg {
+	background: #111;
+}
+.nav {
+	& li {
+		margin-right: $nav-top-padding * 6;
+		float: left;
+		padding: $nav-top-padding 0;
+	}
+	& a {
+		color: #fff;
+		text-decoration: none;
+		line-height: 40px;
+		&:not(.active){
+			opacity: 0.8;
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+	& .active {
+		font-size: 175%;
+	}
+}

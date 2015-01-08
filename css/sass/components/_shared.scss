@@ -1,0 +1,49 @@
+//
+//_shared.scss - Used to define shared/global styles that aren't associated with any project components.
+//An example would be .hidden { display: none; }
+//
+.hide {
+	display: none;
+}
+.show {
+	display: inline-block;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.text-center {
+	text-align: center;
+}
+.clearfix {
+	@include clearfix();
+}
+.img-responsive {
+	max-width: 100%;
+	display: block;
+}
+.vertical-align {
+	display: table;
+	&:first-child {
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+.circle-border {
+	border-radius: 50%;
+}
+.main-bg {
+	background: $main-bg-color;
+}
+.alt-bg {
+	background: $alt-bg-color;
+}
+.masthead {
+	padding: 20% 0;
+	text-align: center;
+}
+.section {
+	padding: $section-spacing;
+}

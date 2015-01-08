@@ -1,0 +1,12 @@
+//
+//_variables.scss - Logic declarations.
+//
+
+//images path
+//url(#{$img-path}img.jpg);
+$img-path : "../images/";
+
+//buttons
+$btn-padding: $btn-top-padding $btn-left-padding;
+$btn-sm: $btn-top-padding / 2 $btn-left-padding / 2;
+$btn-lg: $btn-top-padding * 2 $btn-left-padding * 2;

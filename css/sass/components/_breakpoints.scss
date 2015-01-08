@@ -1,0 +1,42 @@
+//
+//_breakpoints.scss - Breakpoint styling declarations.
+//Width defintions are found in _theme.scss
+//
+.show-lg,.show-md--up {
+	display: inline-block;
+}
+.show-md,.show-sm,.show-md--down {
+	display: none;
+}
+//large
+@media #{$large-breakpoint} {
+	.show-md,.show-md--up,.show-md--down {
+		display: inline-block;
+	}
+	.hide-md,.show-lg,.show-sm, {
+		display: none;
+	}
+    
+
+}
+
+//small
+@media #{$small-breakpoint} {
+	.show-sm,.show-md--down {
+		display: inline-block;
+	}
+    .hide-sm,.show-lg,.show-md,.show-md--up {
+		display: none;
+	}
+	form {
+		width: 100%;
+	}
+	.nav li {
+		float: none;
+		margin-right: auto;
+	}
+	.nav__menu {
+		text-align: center;
+		clear: both;
+	}
+}

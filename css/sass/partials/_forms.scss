@@ -1,0 +1,48 @@
+//
+//_forms.scss - Form declarations.
+//
+
+form {
+	width: 50%;
+	margin: 0 auto;
+	background: $alt-bg-color;
+	padding: $section-spacing;
+	border-radius: $border-radius;
+	& *:not(label) {
+		margin-bottom: $control-margin;
+		font: inherit;
+	}
+}
+label {
+	display: inline-block;
+	margin-right: $control-margin / 2;
+}
+input {
+	padding: $control-padding;
+	border-radius: $border-radius;
+	border: 1px solid $alt-color;
+
+	&[type="text"] {
+		width: 100%;
+	}
+	&[type="checkbox"] {
+		display: inline-block;
+	}
+	&[type="radio"] {
+		width: auto;
+	}
+	&[type="submit"] {
+		width: auto;
+		margin: 0 auto;
+		display: block;
+	}
+}
+textarea {
+	padding: $control-padding;
+	width: 100%;
+	border-radius: $border-radius;
+	border: 1px solid $alt-color;
+}
+select {
+	display: block;
+}

@@ -1,0 +1,41 @@
+//
+//_nav.scss - Navigation declarations.
+//
+
+nav {
+
+}
+.bg {
+	background: $nav-bg;
+	position: fixed;
+	width: 100%;
+}
+.nav {
+	& li {
+		margin-right: $nav-top-padding * 6;
+		float: left;
+		padding: $nav-top-padding 0;
+		overflow: hidden;
+	}
+	& a {
+		color: $nav-color;
+		text-decoration: none;
+		line-height: 40px;
+		&:not(.active){
+			opacity: 0.8;
+			&:hover {
+				opacity: 1;
+			}
+		}
+		&.nav__icon {
+			float: right;
+			font-size: 24px;
+		}
+	}
+	&__menu {
+		display: block;
+		& li {
+			padding: 0;
+		}
+	}
+}

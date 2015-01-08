@@ -31,4 +31,12 @@
 	form {
 		width: 100%;
 	}
+	.nav li {
+		float: none;
+		margin-right: auto;
+	}
+	.nav__menu {
+		text-align: center;
+		clear: both;
+	}
 }

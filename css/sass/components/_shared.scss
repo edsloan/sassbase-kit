@@ -34,10 +34,16 @@
 .circle-border {
 	border-radius: 50%;
 }
+.main-bg {
+	background: $main-bg-color;
+}
 .alt-bg {
 	background: $alt-bg-color;
 }
 .masthead {
 	padding: 20% 0;
 	text-align: center;
+}
+.section {
+	padding: $section-spacing;
 }

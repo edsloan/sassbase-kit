@@ -1,4 +1,4 @@
-/*! SassBase - v1.1.2 | MIT | @edsloandev */
+/*! SassBase-KIT - v0.1.0 | MIT | @edsloandev */
 *,
 *:after,
 *:before {
@@ -30,7 +30,6 @@ a {
 
 img {
   border: 0;
-  max-width: 100%;
 }
 
 ul {
@@ -55,10 +54,6 @@ html {
   background: #fff;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-}
-
-.section {
-  padding: 20px;
 }
 
 h1, .aplha {
@@ -152,6 +147,10 @@ hr {
   border-radius: 50%;
 }
 
+.main-bg {
+  background: #fff;
+}
+
 .alt-bg {
   background: #eee;
 }
@@ -161,14 +160,21 @@ hr {
   text-align: center;
 }
 
+.section {
+  padding: 20px;
+}
+
 .bg {
   background: #111;
+  position: fixed;
+  width: 100%;
 }
 
 .nav li {
   margin-right: 36px;
   float: left;
   padding: 6px 0;
+  overflow: hidden;
 }
 .nav a {
   color: #fff;
@@ -181,8 +187,15 @@ hr {
 .nav a:not(.active):hover {
   opacity: 1;
 }
-.nav .active {
-  font-size: 175%;
+.nav a.nav__icon {
+  float: right;
+  font-size: 24px;
+}
+.nav__menu {
+  display: block;
+}
+.nav__menu li {
+  padding: 0;
 }
 
 ul.disc {
@@ -352,6 +365,16 @@ th, td {
 
   form {
     width: 100%;
+  }
+
+  .nav li {
+    float: none;
+    margin-right: auto;
+  }
+
+  .nav__menu {
+    text-align: center;
+    clear: both;
   }
 }
 

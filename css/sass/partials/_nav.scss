@@ -6,16 +6,19 @@ nav {
 
 }
 .bg {
-	background: #111;
+	background: $nav-bg;
+	position: fixed;
+	width: 100%;
 }
 .nav {
 	& li {
 		margin-right: $nav-top-padding * 6;
 		float: left;
 		padding: $nav-top-padding 0;
+		overflow: hidden;
 	}
 	& a {
-		color: #fff;
+		color: $nav-color;
 		text-decoration: none;
 		line-height: 40px;
 		&:not(.active){
@@ -24,8 +27,15 @@ nav {
 				opacity: 1;
 			}
 		}
+		&.nav__icon {
+			float: right;
+			font-size: 24px;
+		}
 	}
-	& .active {
-		font-size: 175%;
+	&__menu {
+		display: block;
+		& li {
+			padding: 0;
+		}
 	}
 }

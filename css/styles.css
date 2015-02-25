@@ -1,4 +1,4 @@
-/*! SassBase-KIT - v0.1.0 | MIT | @edsloandev */
+/*! SassBase KIT - v0.2.0 | MIT | @edsloandev */
 *,
 *:after,
 *:before {
@@ -57,27 +57,33 @@ html {
 }
 
 h1, .aplha {
-  font-size: 4rem;
+  font-size: 60px;
+  font-size: 3.75rem;
 }
 
 h2, .beta {
-  font-size: 3.2rem;
+  font-size: 48px;
+  font-size: 3rem;
 }
 
 h3, .charlie {
-  font-size: 2.6rem;
+  font-size: 38px;
+  font-size: 2.375rem;
 }
 
 h4, .delta {
-  font-size: 2.2rem;
+  font-size: 30px;
+  font-size: 1.875rem;
 }
 
 h5, .echo {
-  font-size: 1.8rem;
+  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 h6, .foxtrot {
-  font-size: 1.6rem;
+  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 a {
@@ -375,6 +381,7 @@ th, td {
   .nav__menu {
     text-align: center;
     clear: both;
+    display: none;
   }
 }
 

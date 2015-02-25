@@ -6,22 +6,22 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 h1,.aplha {
-	font-size: 4rem;
+	@include font-size(60px);
 }
 h2,.beta {
-	font-size: 3.2rem;
+	@include font-size(48px);
 }
 h3,.charlie {
-	font-size: 2.6rem;
+	@include font-size(38px);
 }
 h4,.delta {
-	font-size: 2.2rem;
+	@include font-size(30px);
 }
 h5,.echo {
-	font-size: 1.8rem;
+	@include font-size(24px);
 }
 h6,.foxtrot {
-	font-size: 1.6rem;
+	@include font-size(20px);
 }
 p {
 
